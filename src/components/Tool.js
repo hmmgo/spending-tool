@@ -56,6 +56,10 @@ const styles = {
     },
     hide: {
         display: 'none',
+    },
+    button: {
+        color: '#19cf63',
+        textDecoration: 'none'
     }
 };
 
@@ -261,12 +265,12 @@ function Tool(props) {
                                     />
                                 </div>
                                 <Typography>This means you're saving
-                                    <span style={{fontWeight: 'bold', color: '#16ff85'}}> £ {saving}</span> per month
+                                    <span style={{fontWeight: 'bold', color: '#19cf63'}}> £ {saving}</span> per month
                                 </Typography>
                             </CardContent>
                             <Grid container className={classes.root} justify="center">
                                 <Button variant="outlined" className={classes.button}>
-                                    <a href={'/'}>Find ways to save</a>
+                                    <a className={classes.button} href={'/'}>Find ways to save</a>
                                 </Button>
                             </Grid>
                             <Grid container className={classes.root} justify="flex-end">
