@@ -1,0 +1,14 @@
+version: '3'
+services:
+    express:
+        build: 
+            context: . 
+            dockerfile: Dockerfile
+        image: image:local
+        container_name: container01
+        restart: always
+        ports:
+            - "8080:8080"
+        volumes:
+            - ./:/image
+            - /image/node_modules
