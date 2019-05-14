@@ -1,4 +1,4 @@
-#Spending Tool
+# Spending Tool
 
 React Hooks used to build this tool.
 
